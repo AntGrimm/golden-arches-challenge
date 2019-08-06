@@ -1,5 +1,6 @@
 :root {
   font: 16px / 1 sans-serif;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 html {
@@ -9,4 +10,44 @@ html {
 body {
   margin: 0;
   min-height: 100%;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-animation-name: color-adjust;
+  -webkit-animation-duration: 4s;
+  animation-name: color-adjust;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes color-adjust {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: rgb(216, 16, 16);
+  }
+}
+
+.entire-site {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
+  text-align: center;
+  color: rgb(238, 241, 8);
+  font-size: 22px;
+}
+
+.logo {
+}
+
+.content {
+  color: rgb(238, 241, 8);
+  font-size: 19px;
 }
